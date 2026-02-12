@@ -8,7 +8,20 @@
 	<meta name="keywords" content="shape up, workout, diet, cardio, strength, stress">
 	<meta name="author" content="Brailyn McGuire">
 
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slicknav JS file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
 	<link rel="stylesheet" href="styles/main.css">
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -28,6 +41,7 @@
 		</div>
 	</header>
 	<!-- naviagation bar -->
+	<nav id="mobilemenu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,25 +64,28 @@
 		</ul>
 	</nav>
 	<main>
-		<aside>
-			<nav id="nav_list">
-				<h2>Additional Resources</h2>
-				<ul>
-					<li><a href="https://paahjournal.com/" target="_blank">Physical Activity and Health</a></li>
-					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"
-							target="_blank">Strectching Exercises</a></li>
-					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
-							target="_blank">Strength Training</a></li>
-					<li><a href="https://my.clevelandclinic.org/health/articles/24754-cardiovascular-endurance"
-							target="_blank">Cardiovascular Training</a></li>
-					<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga Workout</a></li>
-				</ul>
-			</nav>
-			<div class="sidebarimages">
-				<img src="images/break.jpg" alt="Guy Relaxing at Desk">
-				<img src="images/exercise.jpg" alt="Man and Woman doing Push-up">
-				<img src="images/meditate.jpg" alt="Woman Meditating">
-			</div>
+		<aside id="left">
+			<aside>
+				<nav id="nav_list">
+					<h2>Additional Resources</h2>
+					<ul>
+						<li><a href="https://paahjournal.com/" target="_blank">Physical Activity and Health</a></li>
+						<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"
+								target="_blank">Strectching Exercises</a></li>
+						<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
+								target="_blank">Strength Training</a></li>
+						<li><a href="https://my.clevelandclinic.org/health/articles/24754-cardiovascular-endurance"
+								target="_blank">Cardiovascular Training</a></li>
+						<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga Workout</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="sidebarimages">
+					<img src="images/break.jpg" alt="Guy Relaxing at Desk">
+					<img src="images/exercise.jpg" alt="Man and Woman doing Push-up">
+					<img src="images/meditate.jpg" alt="Woman Meditating">
+				</div>
+			</aside>
 		</aside>
 		<section>
 			<h1>Get Ready To Shape Up!</h1>
@@ -87,23 +104,27 @@
 			</blockquote>
 
 			<h2>What We Offer:</h2>
-			<h4><img src="images/weightlifting.png" alt="Weightlifting Icon"><a href="strength/index.html">Build Strong Muscles</a></h4>
+			<h4><img src="images/weightlifting.png" alt="Weightlifting Icon"><a href="strength/index.html">Build Strong
+					Muscles</a></h4>
 			<p>
 				Tired of being tired? Strength training can help you manage or lose weight and increase your
 				metabolism to help you burn more calories. It can also increase bone density and reduce the
 				risk of osteoporosis.
 			</p>
-			<h4><img src="images/cyclist.png" alt="Cyclist Icon"><a href="cardio/index.html">Get Your Heart Rate Up</a></h4>
+			<h4><img src="images/cyclist.png" alt="Cyclist Icon"><a href="cardio/index.html">Get Your Heart Rate Up</a>
+			</h4>
 			<p>
 				Want to lose weight? Cardiovascular exercise burns calories and improves overall health.
 				It can reduce belly fat, promote brain growth, prevent stress, and help you focus.
 			</p>
-			<h4><img src="images/lotus-position.png" alt="Lotus Position Icon"><a href="stress/index.html">Relax</a></h4>
+			<h4><img src="images/lotus-position.png" alt="Lotus Position Icon"><a href="stress/index.html">Relax</a>
+			</h4>
 			<p>
 				Stressed out? Stress can weaken the immune system and cause high blood pressure,
 				fatigue, depression, anxiety, and even heart disease. Learn ways to manage and reduce stress.
 			</p>
-			<h4><img src="images/vegetables.png" alt="Vegetables Icon"><a href="diet/index.html">Eat What's Right For You</a></h4>
+			<h4><img src="images/vegetables.png" alt="Vegetables Icon"><a href="diet/index.html">Eat What's Right For
+					You</a></h4>
 			<p>
 				Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy
 				diet is probably the most important thing you can do to promote overall health.
